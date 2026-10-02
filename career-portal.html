@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Careers at Exec200 Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Noto+Sans:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="career-portal.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="logo"><img src="logo.png" alt="Exec200 Systems"></div>
+      <div>
+        <h1 class="brand-name">Exec200 Systems</h1>
+        <span class="brand-tagline">Careers</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <h2 class="page-title">Open roles at Exec200 Systems</h2>
+    <p class="page-sub">
+      We build the SharePoint, Microsoft 365, and Power Platform solutions that run modern businesses. Now hiring across our consulting, architecture, and development teams— here's what's open right now.
+    </p>
+
+    <div class="card toolbar-card">
+      <div class="toolbar-row">
+        <input type="text" id="f-query" class="toolbar-input" placeholder="Search by role title">
+        <div class="toolbar-selects">
+          <select id="f-dept" class="toolbar-select"></select>
+          <select id="f-loc" class="toolbar-select"></select>
+          <select id="f-type" class="toolbar-select"></select>
+        </div>
+      </div>
+      <button type="button" id="clear-filters" class="link-btn hidden">Clear filters</button>
+    </div>
+
+    <div class="result-count" id="result-count"></div>
+
+    <div class="card job-list-card" id="job-list"></div>
+
+    <div class="page-footer">
+      <span>@Exec200 Systems 2026</span>
+    </div>
+  </main>
+
+  <div class="modal-overlay" id="job-modal">
+    <div class="modal-panel">
+      <div class="card modal-card" id="modal-content"></div>
+    </div>
+  </div>
+
+  <script src="career-portal.js"></script>
+</body>
+</html>
